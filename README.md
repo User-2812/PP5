@@ -44,6 +44,41 @@ In this exercise you will:
 
 ```bash
 # Paste here the sequence of git commands you ran
+-git branch feature-1
+-git checkout feature-1
+;Switched to branch ˋfeature-1ˋ
+-vim feature.txt
+-git commit --m feature.txt
+;On branch feature-1
+;Untracked files:
+;(use "git add <file>..." to include in what will be committed)
+feature.txt
+;nothing added to commit but untracked files presant (use "git add" to track)
+-git commit feature.txt
+;error: pathspec ˋfeature.txtˋ dit not match any file(s) known to git
+-git add feature.txt
+-git commit --m teature.txt
+;[feature-1 dde7258] feature.txt
+; 1 file changed, 0 insertions(+), 0 deletions(-)
+;create mode 100644 feature.txt
+-git branch --list
+;*feature-1
+; master
+-git checkout master
+;Switched to branch ˋmasterˋ
+-git merge feature-1
+;Updating 001422c..dde7258
+;Fast-forward
+;feature.txt |0
+;1 file changed, 0 insertions(+), 0 deletions(-)
+;create mode 100644 feature.txt
+-git log
+;commit dde72580a36ac26e2bc5fd2c8ea336f8e852fa89 (HEAD->master,feature-1)
+;Author: User-2812 <wrobla28@stud.thga.de>
+;Date: Tue May 20 17:54:21 2025 +0200
+
+; feature.txt
+
 # and the relevant terminal output (e.g., branch listing, merge messages)
 ```
 
