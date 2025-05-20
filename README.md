@@ -103,6 +103,26 @@ feature.txt
 
 ```bash
 # Paste here the push & clone commands and outputs
+user-2812@Desktop:~/PP5$ git push origin-ssh master
+user75@128.140.85.215's password:
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (12/12), 1.01 KiB | 1.01 MiB/s, done.
+Total 12 (delta 2), reused 0 (delta 0), pack-reused 0
+To 128.140.85.215:~/repos/myproject.git
+ * [new branch]      master -> master
+
+user-2812@Desktop:~/PP5$ git clone user75@128.140.85.215:~/repos/myproject.git myproject-clone
+Cloning into 'myproject-clone'...
+user75@128.140.85.215's password:
+remote: Enumerating objects: 12, done.
+remote: Counting objects: 100% (12/12), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 12 (delta 2), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (12/12), done.
+Resolving deltas: 100% (2/2), done.
 ```
 
 ---
