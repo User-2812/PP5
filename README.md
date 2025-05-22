@@ -145,7 +145,7 @@ Resolving deltas: 100% (2/2), done.
 
 ```bash
 # Paste here the remote‐adding & push outputs
-```
+
 Github
 user-2812@Desktop:~/PP5t3$ git remote add github git@github.com:User-2812/myproject-gh.git
 user-2812@Desktop:~/PP5t3$ git push -u github master
@@ -200,6 +200,7 @@ To gitlab.thga.de:laurenz.wrobel/myproject-gl.git
  * [new branch]      master -> master
 branch 'master' set up to track 'gitlab/master'.
 user-2812@Desktop:~/PP5t3$
+```
 ---
 
 ### Task 4: Fork, Modify, and Pull/Merge Request
