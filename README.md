@@ -146,7 +146,60 @@ Resolving deltas: 100% (2/2), done.
 ```bash
 # Paste here the remote‐adding & push outputs
 ```
+Github
+user-2812@Desktop:~/PP5t3$ git remote add github git@github.com:User-2812/myproject-gh.git
+user-2812@Desktop:~/PP5t3$ git push -u github master
+error: src refspec master does not match any
+error: failed to push some refs to 'github.com:User-2812/myproject-gh.git'
+user-2812@Desktop:~/PP5t3$ vim testgh
+user-2812@Desktop:~/PP5t3$ git push -u github master
+error: src refspec master does not match any
+error: failed to push some refs to 'github.com:User-2812/myproject-gh.git'
+user-2812@Desktop:~/PP5t3$ git init
+Reinitialized existing Git repository in /home/user-2812/PP5t3/.git/
+user-2812@Desktop:~/PP5t3$ git add testgh
+user-2812@Desktop:~/PP5t3$ git commit -m "Initial commit with testgh"
+[master (root-commit) 2aae735] Initial commit with testgh
+ 1 file changed, 3 insertions(+)
+ create mode 100644 testgh
+user-2812@Desktop:~/PP5t3$ git remote add github git@github.com:User-2812/myproject-gh.git
+error: remote github already exists.
+user-2812@Desktop:~/PP5t3$ git push -u github master
+The authenticity of host 'github.com (140.82.121.4)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 259 bytes | 129.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:User-2812/myproject-gh.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'github/master'.
+user-2812@Desktop:~/PP5t3$
 
+Gitlab
+
+user-2812@Desktop:~/PP5t3$ git remote add gitlab git@gitlab.thga.de:laurenz.wrobel/myproject-gl.git
+user-2812@Desktop:~/PP5t3$ git push -u gitlab master
+The authenticity of host 'gitlab.thga.de (195.37.5.155)' can't be established.
+ED25519 key fingerprint is SHA256:4+4+prKVzsU8Bw0eBjkbBm86bl9+OinZJIidEMGHpqc.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'gitlab.thga.de' (ED25519) to the list of known hosts.
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 259 bytes | 259.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: To create a merge request for master, visit:
+remote:   https://gitlab.thga.de/laurenz.wrobel/myproject-gl/-/merge_requests/new?merge_request%5Bsource_branch%5D=master
+remote:
+To gitlab.thga.de:laurenz.wrobel/myproject-gl.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'gitlab/master'.
+user-2812@Desktop:~/PP5t3$
 ---
 
 ### Task 4: Fork, Modify, and Pull/Merge Request
